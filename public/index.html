@@ -36,7 +36,7 @@
 			
 			function timesForStopRef(stopRef, infowindow, map, marker) {
 				
-				$.getJSON('https://bionictoe.herokuapp.com/stops/' + stopRef +'.json', function (data) {
+				$.getJSON('https://galwaybusmap.herokuapp.com/stops/' + stopRef +'.json', function (data) {
 					
 					var html = "<table><tr><td>Route</td><td>Destination</td><td>Time</td></tr>";
 					
@@ -60,7 +60,7 @@
 			
 			function getAllStops() {
 			
-				$.getJSON('https://bionictoe.herokuapp.com/stops.json', function (data) {
+				$.getJSON('https://galwaybusmap.herokuapp.com/stops.json', function (data) {
 					
 					data.forEach(function(stop) {
 						
